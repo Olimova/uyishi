@@ -1,0 +1,8 @@
+import os
+
+def count(path):
+    if os.path.exists(path):
+        folders = [f for f in os.listdir(path) if os.path.isdir(os.path.join(path, f))]
+        print(f"{path} papkasida {len(folders)} ta papka bor.")
+    else:
+        print(f"{path} topilmadi.")

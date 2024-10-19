@@ -1,0 +1,9 @@
+import shutil
+import os
+
+def remove(path):
+    if os.path.exists(path):
+        shutil.rmtree(path)
+        print(f"{path} o'chirildi.")
+    else:
+        print(f"{path} topilmadi.")
